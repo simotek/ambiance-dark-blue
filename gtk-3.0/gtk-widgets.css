@@ -1837,17 +1837,17 @@ GtkLevelBar.vertical {
     border-style: solid;
     border-color: shade (@bg_color, 0.6);
     background-image: linear-gradient(to right,
-	                   	shade (@selected_bg_color, 1.25) ,
-						shade (@selected_bg_color, 0.55) ,
-	                    shade (@selected_bg_color, 0.45) );
+	                   	shade (@bg_color, 1.4) ,
+						shade (@bg_color, 0.85) ,
+	                    shade (@bg_color, 0.65) );
 }
 
 .scrollbar.slider.horizontal,
 .scrollbar.button.horizontal {
     background-image: linear-gradient(to bottom,
-	                   	shade (@selected_bg_color, 1.25) ,
-						shade (@selected_bg_color, 0.55) ,
-	                    shade (@selected_bg_color, 0.45) );
+	                   	shade (@bg_color, 1.4) ,
+						shade (@bg_color, 0.85) ,
+/* 	                    shade (@bg_color, 0.65) ); */
 }
 
 .scrollbar.slider:hover{
@@ -1855,9 +1855,9 @@ GtkLevelBar.vertical {
     border-style: solid;
     border-color: shade (@bg_color, 0.6);
     background-image: linear-gradient(to right,
-	                  	shade (@selected_bg_color, 1.25) ,
-						shade (@selected_bg_color, 0.75) ,
-	                    shade (@selected_bg_color, 0.65) );
+	                  	shade (@bg_color, 1.5) ,
+						shade (@bg_color, 1) ,
+	                    shade (@bg_color, 0.85) );
 }
 
 .scrollbar.slider.horizontal:hover{
@@ -1865,9 +1865,9 @@ GtkLevelBar.vertical {
     border-style: solid;
     border-color: shade (@bg_color, 0.6);
     background-image: linear-gradient(to bottom,
-	                   	shade (@selected_bg_color, 1.25) ,
-						shade (@selected_bg_color, 0.75) ,
-	                    shade (@selected_bg_color, 0.65) );
+	                   	shade (@bg_color, 1.5) ,
+						shade (@bg_color, 1) ,
+	                    shade (@bg_color, 0.85) );
 }
 
 .scrollbar.slider:backdrop {

@@ -248,9 +248,9 @@ style "scrollbar" = "button" {
 	xthickness = 2
 	ythickness = 2
 
-	bg[NORMAL] = shade (0.8, @selected_bg_color)
-	bg[PRELIGHT] = shade (1.04, @selected_bg_color)
-	bg[ACTIVE] = shade (0.96, @selected_bg_color)
+	bg[NORMAL] = shade (1.1, @bg_color)
+	bg[PRELIGHT] = shade (1.24, @bg_color)
+	bg[ACTIVE] = shade (0.16, @bg_color)
 
 	engine "murrine" {
 		border_shades = {0.95, 0.90}
@@ -272,8 +272,8 @@ style "vscrollbar" {
 }
 
 style "overlay_scrollbar" {
-	bg[SELECTED] = shade (1.0, @selected_bg_color)
-	bg[INSENSITIVE] = shade (0.85, @bg_color)
+	bg[SELECTED] = shade (1.1, @bg_color)
+	bg[INSENSITIVE] = shade (0.95, @bg_color)
 	bg[ACTIVE] = shade (0.6, @bg_color)
 }
 
