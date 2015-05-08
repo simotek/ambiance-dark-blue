@@ -5,10 +5,10 @@
 style "gedit-scrollbar" {
 	GtkScrollbar::slider-width = 11
 
-	bg[NORMAL]      = shade (2.5, "#009eb3")
-	bg[PRELIGHT]    = shade (2.8, "#009eb3")
-	bg[ACTIVE]      = shade (3.0, "#009eb3")
-	bg[INSENSITIVE]	= shade (1.5, "#009eb3")
+	bg[NORMAL]      = shade (2.5, "#02beff")
+	bg[PRELIGHT]    = shade (2.8, "#02beff")
+	bg[ACTIVE]      = shade (3.0, "#02beff")
+	bg[INSENSITIVE]	= shade (1.5, "#02beff")
 
 	engine "murrine"
 	{

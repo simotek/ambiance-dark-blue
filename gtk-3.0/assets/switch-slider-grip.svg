@@ -61,7 +61,7 @@
        height="8"
        width="2"
        id="rect62941"
-       style="fill:#009eb3;fill-opacity:1;stroke:none;display:inline" />
+       style="fill:#02beff;fill-opacity:1;stroke:none;display:inline" />
     <rect
        ry="1"
        rx="1"
@@ -70,7 +70,7 @@
        height="8"
        width="2"
        id="rect62943"
-       style="fill:#009eb3;fill-opacity:1;stroke:none;display:inline" />
+       style="fill:#02beff;fill-opacity:1;stroke:none;display:inline" />
     <rect
        ry="1"
        rx="1"
@@ -79,6 +79,6 @@
        height="8"
        width="2"
        id="rect62945"
-       style="fill:#009eb3;fill-opacity:1;stroke:none;display:inline" />
+       style="fill:#02beff;fill-opacity:1;stroke:none;display:inline" />
   </g>
 </svg>

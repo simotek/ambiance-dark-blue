@@ -124,7 +124,7 @@ div#restorePreviousSessionSeparator
 @-moz-document  url(about:home) {
 #searchText:focus { 
   color: #ffffff !important;
-  border: 1px solid #009eb3 !important;    
+  border: 1px solid #02beff !important;    
   background: #3c3b37 !important;
 
   /*-moz-transition: .30s ease-in !important;*/
@@ -582,7 +582,7 @@ margin-bottom:0px !important;
 
 .newtab-cell:hover:not(:empty) {
 
-  border: 4px solid #009eb3 !important;    
+  border: 4px solid #02beff !important;    
 
 }
 
@@ -673,7 +673,7 @@ margin-bottom:0px !important;
 
 #newtab-search-text:focus { 
   color: #ffffff !important;
-  border: 1px solid #009eb3 !important;    
+  border: 1px solid #02beff !important;    
   background: #3c3b37 !important;
  }
 
