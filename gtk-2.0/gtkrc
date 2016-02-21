@@ -1,10 +1,10 @@
 	###############################################
-	#		Dark theme origin from Ambiance. 
+	#		Dark theme origin from Ambiance.
 	#		But greatly modified the code
 	#		version 1.06
 	##############################################
 
-gtk-color-scheme = "base_color:#3c3b37\nfg_color:#dfdbd2\ntooltip_fg_color:#ffffff\nselected_bg_color:#02beff\nselected_fg_color:#FFFFFF\ntext_color:#DFDBD2\nbg_color:#333230\ntooltip_bg_color:#000000\nlink_color:#02beff\nlink_color_visited:#cb27d5"
+gtk-color-scheme = "base_color:#10161c\nfg_color:#dfdbd2\ntooltip_fg_color:#BDC3C7\nselected_bg_color:#C0392B\nselected_fg_color:#ECF0F1\ntext_color:#ECF0F1\nbg_color:#182029\ntooltip_bg_color:#9B59B6\nlink_color:#3498D8\nlink_color_visited:#9B59B6"
 
 gtk-icon-sizes = "panel-menu=22,22:gtk-button=16,16"
 
@@ -64,7 +64,7 @@ style "default" {
 
 	GtkProgressBar::min-horizontal-bar-height = 14
 	GtkProgressBar::min-vertical-bar-width = 14
-	
+
 	GtkImage::x-ayatana-indicator-dynamic = 1
 	GtkMenuBar::window-dragging = 1
 
@@ -127,22 +127,22 @@ style "default" {
 
 style "dark"
 {
-	color["bg_color_dark"] 	= "#3c3b37"
-	color["fg_color_dark"] 	= "#dfdbd2"
-	color["selected_fg_color_dark"] = "#ffffff"
+	color["bg_color_dark"] 	= "#10161c"
+	color["fg_color_dark"] 	= "#ECF0F1"
+	color["selected_fg_color_dark"] = "#C0392B"
 
 	fg[NORMAL]			= @fg_color_dark
 	fg[PRELIGHT]		= shade (1.15, @fg_color_dark)
 	fg[ACTIVE]			= @fg_color_dark
 	fg[SELECTED]		= @selected_fg_color_dark
 	fg[INSENSITIVE]		= shade (0.5, @fg_color_dark)
-  
+
 	bg[NORMAL]			= @bg_color_dark
 	bg[ACTIVE]			= shade (0.8, @bg_color_dark)
 	bg[SELECTED]		= @selected_bg_color
 	bg[PRELIGHT]		= shade (1.0, "#4D4C48")
 	bg[INSENSITIVE]		= shade (0.85, @bg_color_dark)
-  	
+
 	text[NORMAL]		= @fg_color_dark
 	text[PRELIGHT]		= shade (1.15, @fg_color_dark)
 	text[SELECTED]		= @selected_fg_color_dark
@@ -163,7 +163,7 @@ style "wider" {
 style "entry" {
 	xthickness = 3
 	ythickness = 3
-	text[INSENSITIVE] = "#9c9c9c"
+	text[INSENSITIVE] = "#95A5A6"
 
 	engine "murrine" {
 		contrast = 0.99
@@ -172,7 +172,7 @@ style "entry" {
 
 style "label" {
 
-	fg[INSENSITIVE] = "#9c9c9c"
+	fg[INSENSITIVE] = "#95A5A6"
 
 	engine "murrine" {
 	}
@@ -192,11 +192,11 @@ style "hscale" {
 #	xthickness = 3
 #	ythickness = 3
 #
-#	bg[NORMAL] = shade (1.07, "#cdcdcd")
-#	bg[PRELIGHT] = shade (1.09, "#cdcdcd")
-#	bg[ACTIVE] = shade (1.0, "#cdcdcd")
-#	bg[INSENSITIVE] = mix (0.25, @bg_color, "#e2e1e1")
-#	fg[INSENSITIVE] = "#9c9c9c"
+#	bg[NORMAL] = shade (1.07, "#ECF0F1")
+#	bg[PRELIGHT] = shade (1.09, "#ECF0F1")
+#	bg[ACTIVE] = shade (1.0, "#ECF0F1")
+#	bg[INSENSITIVE] = mix (0.25, @bg_color, "#95A5A6")
+#	fg[INSENSITIVE] = "#95A5A6"
 #
 #	engine "murrine" {
 #		#contrast = 1.0
@@ -215,11 +215,11 @@ style "button" {
 	xthickness = 3
 	ythickness = 3
 
-	bg[NORMAL] = shade (0.99, @bg_color)
-	bg[PRELIGHT] = shade (0.7, @selected_bg_color)
-	bg[ACTIVE] = shade (0.5, @selected_bg_color)
+	bg[NORMAL] = shade (1.1, @bg_color)
+	bg[PRELIGHT] = shade (1.05, @selected_bg_color)
+	bg[ACTIVE] = mix (0.89, @selected_bg_color, @base_color)
 	bg[INSENSITIVE] = @bg_color
-	fg[INSENSITIVE] = "#9c9c9c"
+	fg[INSENSITIVE] = "#95A5A6"
 
 	engine "murrine" {
 		#glow_shade = 2.00
@@ -230,7 +230,7 @@ style "button" {
 }
 
 style "togglebutton" {
-	bg[ACTIVE]   = shade (0.5, @selected_bg_color)
+	bg[ACTIVE]   = shade (0.7, @selected_bg_color)
 
 }
 
@@ -250,7 +250,7 @@ style "scrollbar" = "button" {
 
 	bg[NORMAL] = shade (1.1, @bg_color)
 	bg[PRELIGHT] = shade (1.24, @bg_color)
-	bg[ACTIVE] = shade (0.16, @bg_color)
+	bg[ACTIVE] = shade (0.80, @bg_color)
 
 	engine "murrine" {
 		border_shades = {0.95, 0.90}
@@ -259,7 +259,7 @@ style "scrollbar" = "button" {
 		trough_shades = {0.92, 0.98}
 		lightborder_shade = 1.3
 		glowstyle = 0
-		#glow_shade = 2.02
+		glow_shade = 2.02
 		gradient_shades = {1.3, 0.9, 0.8, 0.6}
 		trough_border_shades = {0.9, 0.98}
 	}
@@ -278,7 +278,7 @@ style "overlay_scrollbar" {
 }
 
 style "scale" {
-	bg[NORMAL] = shade (0.8, @selected_bg_color)
+	bg[NORMAL] = mix (0.89, @selected_bg_color, @base_color)
 	bg[PRELIGHT] = shade (1.04, @selected_bg_color)
 	bg[ACTIVE] = shade (0.96, @bg_color)
 
@@ -329,7 +329,7 @@ style "statusbar" {
 style "comboboxentry"  {
 	xthickness = 3
 	ythickness = 3
-	
+
 	engine "murrine" {
 		#rgba = FALSE
 		border_shades = {1.0, 1.0}
@@ -376,7 +376,7 @@ style "menu_item" = "menu" {
 	ythickness = 3
 
 	fg[PRELIGHT] = @selected_fg_color
-	bg[PRELIGHT] = shade (0.7, @selected_bg_color)
+	bg[PRELIGHT] = mix (0.89, @selected_bg_color, @base_color)
 
 	engine "murrine" {
 		glow_shade = 2.00
@@ -404,7 +404,7 @@ style "scale_menu_item" = "scale" {
 	GtkScale::slider-width = 21
 	GtkScale::slider-length = 13
 
-	bg[ACTIVE] = shade(0.98, "#4D4C48")
+	bg[ACTIVE] = shade(0.98, "#34495E")
 	bg[INSENSITIVE] = shade (0.9, @bg_color)
 
 	engine "murrine" {
@@ -426,7 +426,7 @@ style "separator_menu_item" {
 	GtkWidget::wide-separators = 1
 	GtkWidget::separator-width = 1
 	GtkWidget::separator-height = 7
-	
+
 	engine "murrine" {
 		contrast = 0.99
 		separatorstyle = 0
@@ -466,7 +466,7 @@ style "progressbar" {
 	ythickness = 1
 
 	bg[ACTIVE] = shade (0.94, @bg_color)
-	bg[SELECTED] = shade (0.7, @selected_bg_color)	# sets the progressbar color
+	bg[SELECTED] = mix (0.89, @selected_bg_color, @base_color)	# sets the progressbar color
 
 	engine "murrine" {
 		border_shades = {0.95, 0.90}
@@ -510,8 +510,8 @@ style "scrolledwindow" {
 }
 
 style "radiocheck"  = "button" {
-	text[NORMAL] = shade (0.535, @selected_bg_color)
-	text[PRELIGHT] = shade(1.06, shade (0.535, @selected_bg_color))
+	text[NORMAL] = mix (0.89, @selected_bg_color, @base_color)
+	text[PRELIGHT] = shade(1.1, mix (0.89, @selected_bg_color, @base_color))
 	bg[NORMAL]   = shade (0.92, @bg_color)
 	bg[PRELIGHT] = shade (0.92, @bg_color)
 	fg[INSENSITIVE] = "#9c9c9c"
@@ -531,7 +531,7 @@ style "tooltips" {
 
 	bg[NORMAL]        = @tooltip_bg_color
 	fg[NORMAL]        = @tooltip_fg_color
-	bg[SELECTED]      = "#000000"
+	bg[SELECTED]      = "#2C3E50"
 
 	engine "murrine" {
 		rgba = TRUE
@@ -593,12 +593,12 @@ style "misc-panel" {
 	#bg[PRELIGHT] = "#C7E3BE" #for the (dark) Ambiance background
 	bg[SELECTED] = shade (0.6, @bg_color)  # to be compatible with menus
 	#bg[SELECTED] = shade (1.08, @bg_color)  # to be compatible with menus (dark) Ambiance background
-	fg[NORMAL]   = "#000000"  # for light panel
+	fg[NORMAL]   = "#2C3E50"  # for light panel
 	#fg[NORMAL]   = "#FFFFFF"  # for dark panel
 
-	#fg[PRELIGHT] = "#000000"  # for dark panel
-	#fg[SELECTED] = "#000000"  # for dark panel
-	#font_name = "Bitstream Charter Bold 9"
+	#fg[PRELIGHT] = "#2C3E50"  # for dark panel
+	#fg[SELECTED] = "#2C3E50"  # for dark panel
+	font_name = "Source Sans Pro Regular 9"
 	xthickness = 2
 	ythickness = 2
 }
