@@ -3,8 +3,8 @@
 	#		But greatly modified the code
 	#		version 1.06
 	##############################################
-
-gtk-color-scheme = "base_color:#10161c\nfg_color:#dfdbd2\ntooltip_fg_color:#BDC3C7\nselected_bg_color:#C0392B\nselected_fg_color:#ECF0F1\ntext_color:#ECF0F1\nbg_color:#182029\ntooltip_bg_color:#9B59B6\nlink_color:#3498D8\nlink_color_visited:#9B59B6"
+# old background #182029
+gtk-color-scheme = "base_color:#10161c\nfg_color:#dfdbd2\ntooltip_fg_color:#BDC3C7\nselected_bg_color:#C0392B\nselected_fg_color:#ECF0F1\ntext_color:#ECF0F1\nbg_color:#0f141a\ntooltip_bg_color:#9B59B6\nlink_color:#3498D8\nlink_color_visited:#9B59B6"
 
 gtk-icon-sizes = "panel-menu=22,22:gtk-button=16,16"
 
